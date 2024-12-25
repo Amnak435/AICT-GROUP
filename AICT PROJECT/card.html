@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDER - Shopping Cart</title>
+    <style>
+           header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px;
+            height: 60px;
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8;
+        }
+        h1 {
+            margin: 2;
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+         footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        .cart-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #b09061;
+            padding: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .total-cost {
+            text-align: right;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #c56b26;
+        }
+
+        .quantity-input {
+            width: 40px;
+        }
+
+        .remove-button {
+            color: #c56b26;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+
+        .proceed-to-checkout {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .continue-shopping {
+            background-color: #b09061;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+          <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+	
+    </header>
+
+    <button class="cart-button" onclick="showCart()">
+        <a href="#" style="background-color: beige; padding: 10px; color: #b09061; text-decoration: none; margin: 10px;">View Cart</a>
+    </button>
+
+    <main>
+        <!-- Your existing main content -->
+    </main>
+
+    <div id="cart-container" style="display: none;">
+        <h3>Shopping Cart</h3>
+        <ul class="cart-list" id="cart-list">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <div class="total-cost" id="total-cost">Total: Rs.0</div>
+        <button class="proceed-to-checkout" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        <button class="continue-shopping" onclick="continueShopping()">Continue Shopping</button>
+    </div>
+
+    <footer>
+         <p>Contact No: +92 345 1364732, Email: cider@gmail.com, Address: F-10/1, Islamabad, Pakistan, Social Address: @cider <br>&copy; 2023 C I D E R [Copyrights reserved]</p>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function addToCart(name, price, image) {
+            const product = {
+                name: name,
+                price: price,
+                quantity: 1,
+                image: image
+            };
+
+            cart.push(product);
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartList = document.getElementById('cart-list');
+            const totalCostElement = document.getElementById('total-cost');
+            let totalCost = 0;
+
+            // Clear previous items
+            cartList.innerHTML = '';
+
+            // Add new items
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.classList.add('cart-item');
+
+                // Display product image, name, quantity, and individual price
+                listItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>${item.name}</div>
+                    <div>
+                        <input type="number" class="quantity-input" value="${item.quantity}" min="1" onchange="updateQuantity('${item.name}', this.value)">
+                        <span>Rs.${item.price * item.quantity}</span>
+                        <span class="remove-button" onclick="removeItem('${item.name}')">Remove</span>
+                    </div>
+                `;
+
+                cartList.appendChild(listItem);
+
+                // Update total cost
+                totalCost += item.price * item.quantity;
+            });
+
+            totalCostElement.textContent = `Total: Rs.${totalCost}`;
+        }
+
+        function updateQuantity(name, quantity) {
+            const product = cart.find(item => item.name === name);
+            if (product) {
+                product.quantity = parseInt(quantity);
+            }
+            updateCartDisplay();
+        }
+
+        function removeItem(name) {
+            cart = cart.filter(item => item.name !== name);
+            updateCartDisplay();
+        }
+
+        function showCart() {
+            updateCartDisplay();
+            document.getElementById('cart-container').style.display = 'block';
+        }
+
+        function proceedToCheckout(event) {
+            // Implement navigation to the Payment page or perform other checkout actions
+            
+             window.location.href = 'check.html';
+        }
+
+        function continueShopping(event) {
+          
+
+    window.location.href = 'm2.html';
+        }
+    </script>
+</body>
+
+</html>

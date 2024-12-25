@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDER - Product Details</title>
+
+    <!-- Styles for the entire document -->
+    <style>
+        /* Global styles */
+        body {
+            margin: 5px; /* Set margin for the entire body */
+            padding: 20px; /* Set padding for the entire body */
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9; /* Set background color for the body */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px; /* Padding for header content */
+            height: 60px; /* Set the height of the header */
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8; /* Set opacity for the header */
+        }
+
+        h1 {
+            margin: 2; /* Set margin for h1 */
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px; /* Adjust the position of h1 */
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px; /* Adjust the position of h2 */
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        h3 {
+            color: #b09061;
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline; /* Underline for emphasis */
+            margin-top: 10px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        /* Cart icon styles */
+        .cart-icon {
+            width: 70px;
+            height: 60px;
+            object-fit: cover;
+            margin-top: 10px;
+            position: absolute; /* Absolute positioning for the cart icon */
+            top: 300px;
+            right: 50px;
+            background: #b09061; /* Background color for the cart icon */
+        }
+
+        .cart-button {
+            background: #b09061;
+            border: #b09061;
+            cursor: pointer;
+        }
+
+        /* Product detail container styles */
+        .product-detail-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px; /* Margin at the top of the product detail container */
+        }
+
+        /* Individual product detail styles */
+        .product-detail {
+            color: #b09061;
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Selected product image styles */
+        .selected-product-image {
+            width: 100px;
+            height: 300px;
+            object-fit: cover; /* Adjust how the image is fitted within the container */
+        }
+
+        /* Add to Cart button styles */
+        .add-to-cart-button {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px; /* Margin at the top of the button */
+        }
+
+        /* Related products styles */
+        .related-products {
+            display: flex;
+            justify-content: flex-start; /* Align items at the start of the flex container */
+            align-items: center;
+            flex-wrap: nowrap; /* Prevent wrapping to the next line */
+            overflow-x: auto; /* Enable horizontal scroll if needed */
+            margin-top: 20px; /* Margin at the top of the related products container */
+        }
+
+        /* Styles for each related product container */
+        .related-container {
+            text-align: center;
+            margin: 10px; /* Margin for each related product container */
+            white-space: nowrap; /* Prevent text from wrapping */
+            color: #b09061;
+            font-size: 1em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        /* Related product image styles */
+        .related {
+            width: 150px;
+            height: 300px; /* Set the height to match the selected product */
+            object-fit: cover; /* Adjust how the image is fitted within the container */
+        }
+
+        /* Related product description styles */
+        .related-description {
+            color: #b09061;
+            text-align: center; /* Center the text */
+            font-size: 1.2em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 5px; /* Margin at the top of the description */
+            width: 100%; /* Ensure the description takes 100% width */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+	
+    </header>
+	 <a href="m2.html" style="background-color: beige; padding: 10px; color: #b09061; text-decoration: none; margin: 10px;">Back</a>
+	  <button class="cart-button">
+ <a href="card.html" >
+        <img src="cart.jpg" alt="Cart Icon" class="cart-icon"></a>
+    	  </button>
+    <main>
+        <div class="product-detail-container">
+            <div class="product-detail">
+                <h3> Pant 5 - Slim Fit </h3>
+                <img src="pt5.jpg" alt="Pants 5" class="selected-product-image">
+                <div class="product-description">
+                    <p>Name: Slim Fit</p>
+                    <p>Price: Rs.4000</p>
+                   <button class="add-to-cart-button" id="addToCartButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <h3> Related Products </h3>
+            <div class="related-products">
+                <div class="related-container">
+                    <a href="pt2.html">
+                    <img src="pt2.jpg" alt="Pants 2" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Stylish Denim</p>
+                        <p>Price: Rs.5000</p>
+                    </div>
+                </div>
+
+                <div class="related-products">
+                <div class="related-container">
+                    <a href="pt3.html">
+                    <img src="pt3.jpg" alt="Pants 3" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Casual Chic</p>
+                        <p>Price: Rs.7000</p>
+                    </div>
+                </div>
+		<div class="related-products">
+                <div class="related-container">
+                    <a href="pt4.html">
+                    <img src="pt4.jpg" alt="Pants 4" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Vintage Corduroy</p>
+                        <p>Price: Rs.3000</p>
+                    </div>
+                </div>
+		<div class="related-products">
+                <div class="related-container">
+                    <a href="pt1.html">
+                    <img src="pt1.jpg" alt="Pants 1" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Comfort Fit  Classic</p>
+                        <p>Price: Rs.4000</p>
+                    </div>
+                </div>
+		<div class="related-products">
+                <div class="related-container">
+                    <a href="pt6.html">
+                    <img src="pt6.jpg" alt="Pants 6" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Cider Classic</p>
+                        <p>Price: Rs.3000</p>
+                    </div>
+                </div>
+		<div class="related-products">
+                <div class="related-container">
+                    <a href="pt7.html">
+                    <img src="pt7.jpg" alt="Pants 7" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Urban Cargo</p>
+                        <p>Price: Rs.3000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact No: +92 345 1364732, Email: cider@gmail.com, Address: F-10/1, Islamabad, Pakistan, Social Address: @cider <br>&copy; 2023 C I D E R [Copyrights reserved]</p>
+    </footer>
+<script>
+        function addToCart() {
+            // Get the product details
+            var productName = "Slim Fit";
+            var productPrice = 4000;
+
+            // Create a JavaScript object to represent the item
+            var cartItem = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Check if a cart exists in the localStorage
+            var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Add the item to the cart
+            cart.push(cartItem);
+
+            // Save the updated cart back to the localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Optionally, you can provide feedback to the user (e.g., alert)
+            alert("Item added to the cart!");
+        }
+    </script>
+</body>
+
+</html>

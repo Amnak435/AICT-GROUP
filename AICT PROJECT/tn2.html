@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDER - Product Details</title>
+    <style>
+        body {
+            margin: 5px;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9;
+        }
+
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px;
+            height: 60px;
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8;
+        }
+
+        h1 {
+            margin: 2;
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        h3 {
+            color: #b09061;
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline;
+            margin-top: 10px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        .cart-icon {
+            width: 70px;
+            height: 60px;
+            object-fit: cover;
+            margin-top: 10px;
+            position: absolute;
+            top: 300px;
+            right: 50px;
+            background: #b09061;
+        }
+
+        .cart-button {
+            background: #b09061;
+            border: #b09061;
+            cursor: pointer;
+        }
+
+        .product-detail-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .product-detail {
+            color: #b09061;
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .selected-product-image {
+            width: 275px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .add-to-cart-button {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .related-products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .related-container {
+            text-align: center;
+            margin: 10px;
+            color: #b09061;
+            text-align: left;
+            font-size: 1.5em;
+            flex: 0 0 25%; /* 4 items per row */
+        }
+
+        .related {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .related-description {
+            color: #b09061;
+            text-align: left;
+            font-size: 1em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+
+    </header>
+	 <a href="m2.html" style="background-color: beige; padding: 10px; color: #b09061; text-decoration: none; margin: 10px;">Back</a>
+    <button class="cart-button">
+ <a href="card.html" > 
+        <img src="cart.jpg" alt="Cart Icon" class="cart-icon"></a>
+    </button>
+    <main>
+        <div class="product-detail-container">
+            <div class="product-detail">
+                <h3> Turtle Neck 2 - Cozy Comfort </h3>
+                <img src="tn6.jpg" alt="Turtle Neck 6" class="selected-product-image">
+                <div class="product-description">
+                    <p>Name: Cozy Comfort</p>
+                    <p>Price: Rs.5000</p>
+                    <button class="add-to-cart-button" id="addToCartButton" onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+
+            <h3> Related Products </h3>
+            <div class="related-products">
+                <div class="related-container">
+                    <a href="tn1.html">
+                    <img src="tn5.jpg" alt="Turtle Neck 5" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Softie</p>
+                        <p>Price: Rs.2000</p>
+                    </div>
+                </div>
+
+                <div class="related-container">
+                    <a href="tn3.html">
+                    <img src="tn7.jpg" alt="Turtle Neck 7" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Winter Warmth</p>
+                        <p>Price: Rs.3000</p>
+                    </div>
+                </div>
+
+                <div class="related-container">
+                    <a href="tn4.html">
+                    <img src="tn8.jpg" alt="Turtle Neck 8" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Elegant Knit</p>
+                        <p>Price: Rs.4000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact No: +92 345 1364732, Email: cider@gmail.com, Address: F-10/1, Islamabad, Pakistan, Social Address: @cider <br>&copy; 2023 C I D E R [Copyrights reserved]</p>
+    </footer>
+<script>
+        function addToCart() {
+            // Get the product details
+            var productName = "Cozy Comfort";
+            var productPrice = 5000;
+
+            // Create a JavaScript object to represent the item
+            var cartItem = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Check if a cart exists in the localStorage
+            var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Add the item to the cart
+            cart.push(cartItem);
+
+            // Save the updated cart back to the localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Optionally, you can provide feedback to the user (e.g., alert)
+            alert("Item added to the cart!");
+        }
+    </script>
+</body>
+
+</html>

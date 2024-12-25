@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>CIDER - Create Your Fashion</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 5;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px; 
+            height: 60px;
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8; 
+        }
+
+        h1 {
+            margin: 2;
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px;
+            font-weight: bold;
+            font-family: 'Roboto' , sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        h3 {
+            color: #c56b26;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation button styles */
+        .button1 {
+            text-align: center; 
+        }
+
+        p1, .button {
+            color: #c56b26;
+            display: inline-block; 
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            padding: 0 20px;
+            text-decoration: underline; 
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            text-decoration: none;
+        }
+
+        p1::after {
+            content: "";
+            display: block;
+        }
+
+        /* Main content styles */
+        main {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .dresses {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .dress {
+            flex-basis: 48%;
+            margin: 10px;
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            box-sizing: border-box;
+        }
+
+        h4 {
+            color: #b09061;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+            margin-bottom: 0.1em;
+        }
+
+        p3, p4, p5 {
+            color: #b09061;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        p4 {
+            font-weight: bold;
+            text-decoration: underline; 
+        }
+
+        p5 {
+            font-size: 1.2em;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Branding in the header -->
+        <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+    </header>
+    
+    <main>
+        <!-- Main heading -->
+        <h3> C    I    D    E    R </h3>
+        
+        <!-- Navigation buttons -->
+        <div class="button1">
+            <!-- Home link -->
+            <p1><a href="#about-us">Home</a></p1>
+            <!-- Shop link -->
+            <a href="m2.html" class="button">Shop</a>
+        </div>
+        
+        <!-- Dress images -->
+        <div class="dresses">
+            <div class="dress">
+                <!-- Dress 1 -->
+                <img src="dress1.jpg" alt="Dress 1" width="300" height="200"> 
+            </div>
+            <div class="dress">
+                <!-- Dress 2 -->
+                <img src="dress2.jpg" alt="Dress 2" width="300" height="200">
+            </div>
+            <div class="dress">
+                <!-- Dress 3 -->
+                <img src="dress3.jpg" alt="Dress 3" width="300" height="200">
+            </div>
+        </div>
+        
+        <!-- About us section -->
+        <div class="about-us" id="about-us">
+            <!-- About us heading -->
+            <h4> WELCOME TO CIDER</h4>
+            <!-- Home page message -->
+            <p3>You are currently at the home page. Click on 'shop' to shop with us <3</p3>
+            <br> <br> <br>
+            <!-- About us description heading -->
+            <p4> ABOUT US </p4>
+            <br>
+            <!-- About us description -->
+            <p5>At Cider, we curate a timeless collection that transcends trends, empowering you to express your unique style confidently. With a passion for quality and inclusivity, our mission blends fashion and functionality, reflecting both the latest trends and your personal story. Join us on a journey of self-expression and discover wardrobe essentials that speak to you.</p5>
+        </div>
+    </main>
+
+    <!-- Footer content -->
+    <footer>
+        <!-- Contact information and copyright notice -->
+        <p2>Contact No: +92 345 1364732, Email: cider@gmail.com,  Address: F-10/1, Islamabad, Pakistan,  Social Address: @cider <br>&copy; 2023 C I D E R  [Copyrights reserved]</p2>
+    </footer>
+
+</body>
+</html>

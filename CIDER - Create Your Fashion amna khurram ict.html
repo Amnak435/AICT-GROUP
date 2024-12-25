@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>CIDER - Create Your Fashion</title>
+
+    <!-- Styles for the entire document -->
+    <style>
+        /* Global styles */
+        body {
+            margin: 5px; /* Set margin for the entire body */
+            padding: 20px; /* Set padding for the entire body */
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9; /* Set background color for the body */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px; /* Padding for header content */
+            height: 60px; /* Set the height of the header */
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8; /* Set opacity for the header */
+        }
+
+        h1 {
+            margin: 2; /* Set margin for h1 */
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px; /* Adjust the position of h1 */
+            font-weight: bold;
+            font-family: 'Roboto' , sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px; /* Adjust the position of h2 */
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        p1 {
+            color: #b09061;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        /* Styles for Turtle Necks section */
+        .tnr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        .tns-container {
+            text-align: center;
+            margin: 10px; /* Margin for each container */
+        }
+
+        .tns {
+            width: 275px;
+            height: 270px;
+            object-fit: cover; /* Adjust how images are fitted within the container */
+        }
+
+        .product-description {
+            color: #b09061;
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 10px; /* Margin at the top of the description */
+        }
+
+        .add-to-cart-button {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 2px; /* Margin at the top of the button */
+        }
+
+        /* Styles for Cider Pants section */
+        .pnr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        .pns-container {
+            text-align: left;
+            margin: 10px; /* Margin for each container */
+        }
+
+        .pns {
+            width: 100px;
+            height: 300px;
+            object-fit: cover; /* Adjust how images are fitted within the container */
+        }
+
+        .pants-description {
+            color: #b09061;
+            text-align: left;
+            font-size: 1em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 10px; /* Margin at the top of the description */
+        }
+
+        /* Styles for Cider Sweaters section */
+        .sr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Add margin at the top */
+        }
+
+        .ss-container {
+            text-align: center;
+            margin: 10px; /* Margin for each container */
+        }
+
+        .ss {
+            width: 250px;
+            height: 250px;
+            object-fit: cover; /* Adjust how images are fitted within the container */
+        }
+
+        .pds {
+            color: #b09061;
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 10px; /* Margin at the top of the description */
+        }
+
+        /* Common styles for 'Add to Cart' button */
+        .add-to-cart-button {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 2px; /* Margin at the top of the button */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        h3 {
+            color: #b09061;
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+            margin-bottom: 0.1em;
+        }
+	 .back-to-home-button {
+            background-color: beige;
+            padding: 10px;
+            color: #b09061;
+            text-decoration: none;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+	<br> <br> <br> <a href="file:///Users/amna/Desktop/ict%20project/m.html" class="back-to-home-button">Back to Home</a>
+    </header>
+    
+    <main>
+	<br> <br> <br> <p1>'Add to cart' button on this page is static, to shop the items click on them and view in detail :) </p1>
+        <h3> Turtle Necks </h3>
+        <div class="tnr">
+            <div class="tns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/tn1.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/tn5.jpg" alt="Turtle Neck 5" class="tns">
+                </a>
+                <div class="product-description">
+                    <p>Name: Softie</p>
+                    <p>Price: Rs.2000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="tns-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/tn2.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/tn6.jpg" alt="Turtle Neck 6" class="tns">
+                </a>
+                <div class="product-description">
+                    <p>Name: Cozy Comfort</p>
+                    <p>Price: Rs.5000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="tns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/tn3.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/tn7.jpg" alt="Turtle Neck 7" class="tns">
+                </a>
+                <div class="product-description">
+                    <p>Name: Winter Warmth</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="tns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/tn4.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/tn8.jpg" alt="Turtle Neck 8" class="tns">
+                </a>
+                <div class="product-description">
+                    <p>Name: Elegant Knit</p>
+                    <p>Price: Rs.4000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            
+	<h3> Cider Pants </h3>
+	<div class="pnr">
+            <div class="pns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/pt1.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt1.jpg" alt="Pants 1" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Comfort Fit</p>
+                    <p>Price: Rs.4000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="pns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/pt2.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt2.jpg" alt="Pants 2" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Stylish Denim</p>
+                    <p>Price: Rs.5000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="pns-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/pt3.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt3.jpg" alt="Pants 3" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Casual Chic</p>
+                    <p>Price: Rs.7000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+            <div class="pns-container">
+ 		<a href="file:///Users/amna/Desktop/ict%20project/pt4.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt4.jpg" alt="Pants 4" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Vintage Corduroy</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+	    <div class="pns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/pt5.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt5.jpg" alt="Pants 5" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Slim Fit Classic</p>
+                    <p>Price: Rs.4000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+		<div class="pns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/pt6.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt6.jpg" alt="Pants 6" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Cider Classic</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+		<div class="pns-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/pt7.html">
+                    <img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/pt7.jpg" alt="Pants 7" class="pns">
+                </a>
+                <div class="pants-description">
+                    <p>Name: Urban Cargo</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+
+	<h3> Cider Sweaters </h3>
+	<div class="sr">
+    <div class="ss-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/s1.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s1.jpg" alt="Sweater 1" class="ss">
+                </a>
+        <div class="pds">
+            <p>Name: Cozy Hug</p>
+            <p>Price: Rs.3000</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+    <div class="ss-container">
+		<a href="file:///Users/amna/Desktop/ict%20project/s2.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s2.jpg" alt="Sweater 2" class="ss">
+                </a>
+        <div class="pds">
+            <p>Name: Snowflake Sparkle</p>
+            <p>Price: Rs.5000</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+    <div class="ss-container">
+        <a href="file:///Users/amna/Desktop/ict%20project/s3.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s3.jpg" alt="Sweater 3" class="ss">
+                </a>
+        <div class="pds">
+            <p>Name: Snuggle Bunny</p>
+            <p>Price: Rs.8000</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+    <div class="ss-container">
+        <a href="file:///Users/amna/Desktop/ict%20project/s4.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s4.jpg" alt="Sweater 4" class="ss">
+                </a>
+        <div class="pds">
+            <p>Name: Charming Chic</p>
+            <p>Price: Rs.5000</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+	 <div class="sr">
+            <div class="ss-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/s5.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s5.jpg" alt="Sweater 5" class="ss">
+                </a>
+                <div class="pds">
+                    <p>Name: Sweetheart </p>
+                    <p>Price: Rs.6000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+	 <div class="sr">
+            <div class="ss-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/s6.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s6.jpg" alt="Sweater 6" class="ss">
+                </a>
+                <div class="pds">
+                    <p>Name: Winter Warmth</p>
+                    <p>Price: Rs.4000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+	 <div class="sr">
+            <div class="ss-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/s7.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s7.jpg" alt="Sweater 7" class="ss">
+                </a>
+                <div class="pds">
+                    <p>Name: Fuzzy Wuzzy</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+	 <div class="sr">
+            <div class="ss-container">
+                <a href="file:///Users/amna/Desktop/ict%20project/s8.html">
+		<img src="CIDER%20-%20Create%20Your%20Fashion%20amna%20khurram%20ict_files/s8.jpg" alt="Sweater 8" class="ss">
+                </a>
+                <div class="pds">
+                    <p>Name: Sweater Weather</p>
+                    <p>Price: Rs.7000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            
+    </div></div></div></div></div></div></main>
+  
+    <footer>
+        <p>Contact No: +92 345 1364732, Email: cider@gmail.com, Address: F-10/1, Islamabad, Pakistan, Social Address: @cider <br>© 2023 C I D E R  [Copyrights reserved]</p>
+    </footer>
+
+
+</body></html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDER - Product Details</title>
+
+    <!-- Styles for the entire document -->
+    <style>
+        /* Global styles */
+        body {
+            margin: 5px; /* Set margin for the entire body */
+            padding: 20px; /* Set padding for the entire body */
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9; /* Set background color for the body */
+        }
+
+        /* Header styles */
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px; /* Padding for header content */
+            height: 60px; /* Set the height of the header */
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8; /* Set opacity for the header */
+        }
+
+        h1 {
+            margin: 2; /* Set margin for h1 */
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px; /* Adjust the position of h1 */
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px; /* Adjust the position of h2 */
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        h3 {
+            color: #b09061;
+            text-align: center;
+            font-size: 2em;
+            text-decoration: underline; /* Underline for emphasis */
+            margin-top: 10px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        /* Cart icon styles */
+        .cart-icon {
+            width: 70px;
+            height: 60px;
+            object-fit: cover;
+            margin-top: 10px;
+            position: absolute; /* Absolute positioning for the cart icon */
+            top: 300px;
+            right: 50px;
+            background: #b09061; /* Background color for the cart icon */
+        }
+
+        .cart-button {
+            background: #b09061;
+            border: #b09061;
+            cursor: pointer;
+        }
+
+        /* Product detail container styles */
+        .product-detail-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px; /* Margin at the top of the product detail container */
+        }
+
+        /* Individual product detail styles */
+        .product-detail {
+            color: #b09061;
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Selected product image styles */
+        .selected-product-image {
+            width: 275px;
+            height: 270px;
+            object-fit: cover; /* Adjust how the image is fitted within the container */
+        }
+
+        /* Add to Cart button styles */
+        .add-to-cart-button {
+            background-color: #c56b26;
+            color: beige;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 5px; /* Margin at the top of the button */
+        }
+
+        /* Related products styles */
+        .related-products {
+            display: flex;
+            justify-content: flex-start; /* Align items at the start of the flex container */
+            align-items: center;
+            margin-top: 20px; /* Margin at the top of the related products container */
+        }
+
+        /* Styles for each related product container */
+        .related-container {
+            text-align: center;
+            margin: 10px; /* Margin for each related product container */
+            color: #b09061;
+            text-align: left;
+            font-size: 1.5em;
+        }
+
+        /* Related product image styles */
+        .related {
+            width: 275px;
+            height: 170px;
+            height: auto;
+            object-fit: cover; /* Adjust how the image is fitted within the container */
+        }
+
+        /* Related product description styles */
+        .related-description {
+            color: #b09061;
+            text-align: left;
+            font-size: 1em;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            margin-top: 10px; /* Margin at the top of the description */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> C    I    D    Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+	
+    </header>
+	 <a href="m2.html" style="background-color: beige; padding: 10px; color: #b09061; text-decoration: none; margin: 10px;">Back</a>
+	  <button class="cart-button">
+     <a href="card.html" >
+        <img src="cart.jpg" alt="Cart Icon" class="cart-icon"></a>
+    	  </button>
+    <main>
+        <div class="product-detail-container">
+            <div class="product-detail">
+                <h3> Sweater 1 - Cozy Hug</h3>
+                <img src="s1.jpg" alt="Sweater 1" class="selected-product-image">
+                <div class="product-description">
+                    <p>Name: Cozy Hug</p>
+                    <p>Price: Rs.3000</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <h3> Related Products </h3>
+            <div class="related-products">
+                <div class="related-container">
+                    <a href="s2.html">
+		    <img src="s2.jpg" alt="Sweater 2" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Snowflake Sparkle</p>
+                        <p>Price: Rs.5000</p>
+                    </div>
+                </div>
+
+                
+                <div class="related-container">
+                    <a href="s3.html">
+		    <img src="s3.jpg" alt="Sweater 3" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Snuggle Bunny</p>
+                        <p>Price: Rs.8000</p>
+                    </div>
+                </div>
+
+
+                <div class="related-container">
+                    <a href="s4.html">
+		    <img src="s4.jpg" alt="Sweater 4" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Charming Chic</p>
+                        <p>Price: Rs.5000</p>
+                    </div>
+                </div>
+	</div>
+		<div class="related-products">
+                <div class="related-container">
+                    <a href="s5.html">
+		    <img src="s5.jpg" alt="Sweater 5" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Sweetheart</p>
+                        <p>Price: Rs.6000</p>
+                    </div>
+                </div>
+
+
+                <div class="related-container">
+                    <a href="s6.html">
+		    <img src="s6.jpg" alt="Sweater 6" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Winter Warmth</p>
+                        <p>Price: Rs.4000</p>
+                    </div>
+                </div>
+
+
+                <div class="related-container">
+                    <a href="s7.html">
+		    <img src="s7.jpg" alt="Sweater 7" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Fuzzy Wuzzy</p>
+                        <p>Price: Rs.3000</p>
+                    </div>
+                </div>
+
+
+                <div class="related-container">
+                    <a href="s8.html">
+		    <img src="s8.jpg" alt="Sweater 8" class="related">
+                    </a>
+                    <div class="related-description">
+                        <p>Name: Sweater Weather</p>
+                        <p>Price: Rs.7000</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact No: +92 345 1364732, Email: cider@gmail.com, Address: F-10/1, Islamabad, Pakistan, Social Address: @cider <br>&copy; 2023 C I D E R [Copyrights reserved]</p>
+    </footer>
+
+</body>
+
+</html>

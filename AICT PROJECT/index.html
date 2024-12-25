@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>CIDER - Create Your Fashion</title>
+
+    <!-- Styles for the entire document -->
+    <style>
+        body {
+            margin: 5px;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffdab9;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px;
+            height: 40px;
+            background-image: url('bg.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 50% 50%;
+            opacity: 0.8;
+        }
+
+        /* Header text styles */
+        h1 {
+            margin: 2;
+            font-size: 8em;
+            color: beige;
+            margin-top: -50px;
+            font-weight: bold;
+            font-family: 'Roboto', sans;
+        }
+
+        h2 {
+            color: beige;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+
+        /* Email label styles */
+        label.email-label { 
+            color: #8B4513; /* Dark brown color */
+            text-align: center;
+            font-size: 4ex;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            text-transform: uppercase; /* Convert text to uppercase */
+        }
+
+        /* Password label styles */
+        label.password-label{
+            color: #8B4513; /* Dark brown color */
+            text-align: center;
+            font-size: 4ex;
+            margin-top: -100px;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+            width: 200px; 
+            padding: 10px;
+            text-transform: uppercase; /* Convert text to uppercase */
+        }
+
+        /* Input styles for email and password */
+        input[type="email"], input[type="password"] {
+            background-color: beige;
+            width: 200px;
+            padding: 10px;
+            color: #000; /* Black color for text */
+            border: none;
+        }
+
+        /* Main section styles */
+        main {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 100px;
+            height: 300px;
+            background-image: url('image1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            opacity: 0.9; 
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #d2b48c;
+            padding: 10px;
+            color: beige;
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Roboto', sans;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1> C    I    D     Ǝ    R </h1>
+        <h2> your cart, your canvas, your statement</h2>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Form for user input with action to redirect to "m.html" on submission -->
+        <form action="m.html" method="post">
+            <!-- Email label and input -->
+            <label for="email" class="email-label">ENTER YOUR EMAIL:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Password label and input -->
+            <label for="password" class="password-label">ENTER YOUR PASSWORD:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <!-- Submit button to trigger form submission -->
+            <input type="submit" value="SUBMIT">
+        </form>
+     
+ <br> <button class="sign-up-button" onclick="location.href='sign.html'">Sign Up</button></br>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Contact and copyright information -->
+        <p4>Contact No: +92 345 1364732   Email: cider@gmail.com   Address: F-10/1, Islamabad, PakistanSocial  Address:,<br> @cider &copy;  2023 C I D E R  [Copyrights reserved]</p4>
+    </footer>
+
+</body>
+
+</html>
