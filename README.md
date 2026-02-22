@@ -30,7 +30,7 @@ This project consists of multiple web pages designed using **HTML** to represent
 - **HTML5**: Structure and design of the website.  
 - **CSS3**: (Optional for styling if applied in the future).  
 - **GitHub**: Version control and collaboration.  
-##will convert this into a fully deployable website
+##will convert this into a fully deployable website in vervel
 ## Folder Structure  
 ```plaintext
 Cider-Clothing-Brand/
